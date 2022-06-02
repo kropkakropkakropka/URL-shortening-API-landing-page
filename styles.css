@@ -83,7 +83,7 @@ select {
 .card-width{width: var(--cr-width);}
 
 h1 {
-  font-size: 3.9rem;
+  font-size: 4.6rem;
 }
 
 button {
@@ -95,10 +95,6 @@ input {
   border: none;
 }
 
-footer h6{
-  margin-bottom: 1rem;
-}
-
 #input-area {
   background-image: url(./images/bg-shorten-desktop.svg);
   background-position: left;
@@ -107,4 +103,21 @@ footer h6{
 #boost-info {
   background-image: url(./images/bg-boost-desktop.svg);
   background-size: cover;
+}
+
+#test img{
+  margin-top: -4rem;
+}
+#line{
+  position: absolute;
+  background-color: var(--btn-color);
+  height: 0.5rem;
+  width: 100%;
+  top: 50%;
+}
+
+@media (min-width: 770px) {
+  #working{
+    margin-right: -16rem;
+  }
 }
