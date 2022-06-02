@@ -1,7 +1,9 @@
-:root{
-    --btn-color: rgb(41, 209, 209);
-    --bg-purple: rgb(58, 48, 83);
+:root {
+  --btn-color: rgb(41, 209, 209);
+  --bg-purple: rgb(58, 48, 83);
+  --cr-width: 20rem;
 }
+
 /* Box sizing rules */
 *,
 *::before,
@@ -64,9 +66,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -76,18 +78,33 @@ select {
     scroll-behavior: auto !important;
   }
 }
-h1{
-    font-size: 3.9rem;
+
+.bg-purple{background-color: var(--bg-purple);}
+.card-width{width: var(--cr-width);}
+
+h1 {
+  font-size: 3.9rem;
 }
-button{
-    background-color: var(--btn-color);
-    border: none;
+
+button {
+  background-color: var(--btn-color);
+  border: none;
 }
-input{
-    border: none;
+
+input {
+  border: none;
 }
-#input-area{
-    background-image: url(./images/bg-shorten-desktop.svg);
-    background-position: left;
-    background-color: var(--bg-purple);
+
+footer h6{
+  margin-bottom: 1rem;
+}
+
+#input-area {
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-position: left;
+}
+
+#boost-info {
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-size: cover;
 }
