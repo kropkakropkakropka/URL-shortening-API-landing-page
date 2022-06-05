@@ -47,7 +47,7 @@ function createDiv(pEl, dEl){
     div.append(pEl);
     div.append(dEl);
     div.classList.add('bg-white', 'rounded', 'fw-bold','d-flex', 'flex-row', 'justify-content-between', 'py-2', 'px-4', 'mt-3', 'align-items-center');
-    //localStorage.setItem('link', div.outerHTML);
+    localStorage.setItem('link', div.innerHTML);
     return div;
 }
 

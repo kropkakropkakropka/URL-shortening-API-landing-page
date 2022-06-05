@@ -84,6 +84,12 @@ select {
 .card-width{width: var(--cr-width);}
 .shrt-color{color:var(--btn-color)}
 
+@media (max-width: 768px) {
+  .sm-margin{
+    margin: 3rem 0;
+  } 
+}
+
 h1 {
   font-size: 4.6rem;
 }
@@ -112,9 +118,12 @@ main{
 }
 @media (max-width: 576px) {
   h1{
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
-  
+}
+
+#intro{
+  width: 33rem;
 }
 
 #input-area {
@@ -126,20 +135,37 @@ main{
   background-image: url(./images/bg-boost-desktop.svg);
   background-size: cover;
 }
-
 #test img{
+  display: block;
+  margin-inline: auto;
   margin-top: -4rem;
 }
 #line{
   position: absolute;
   background-color: var(--btn-color);
-  height: 0.5rem;
-  width: 100%;
-  top: 50%;
+  top: 25%;
+  height: 60%;
+  width: 0.5rem;
 }
 
 @media (min-width: 770px) {
   #working{
     margin-right: -16rem;
+  }
+  #adv-settings{
+    height: 20rem
+  }
+  #line{
+    height: 0.5rem;
+    width: 100%;
+    top: 45%;
+  }
+  #test img{
+    margin-inline: 0;
+  }
+}
+@media (max-width: 576px) {
+  #intro{
+    width: 20rem;
   }
 }
