@@ -89,6 +89,11 @@ select {
     margin: 3rem 0;
   } 
 }
+@media (max-width: 576px) {
+  .sm-margin2{
+    margin: 1rem 0;
+  } 
+}
 
 h1 {
   font-size: 4.6rem;

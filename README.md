@@ -65,6 +65,7 @@ bootstrap docs
 
 
 ## Todo
-make js script that uses ulr shortening api
-make it responsive 
+fix navbar toggle on mobile
+add option to delete shorten link
+make input are look better on mobile
 
