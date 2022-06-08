@@ -9,7 +9,16 @@ window.onload = () => {
     });
 }
 
-shortenButton.addEventListener('click', ()=>{
+shortenButton.addEventListener('click', () => {
+    eventHandler();
+});
+input.addEventListener('keypress', (e) => {
+    if (e.key === "Enter"){
+        eventHandler();
+    }
+});
+function eventHandler(){
+    console.log('siema');
     const inputValue = input.value;
     const url = `https://api.shrtco.de/v2/shorten?url=${inputValue}`;
     fetch(url)
@@ -17,11 +26,12 @@ shortenButton.addEventListener('click', ()=>{
     .then(data =>{
         saveToLocal(data.result.full_short_link, inputValue);
         displayLink(data.result.full_short_link, inputValue);
+        input.value = '';
     })
     .catch(error => {
         throw error;
     })
-})
+}
 
 function getLinksFromLocalStorage(){
     let existingLinks = []

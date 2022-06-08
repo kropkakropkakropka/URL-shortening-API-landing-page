@@ -65,7 +65,5 @@ bootstrap docs
 
 
 ## Todo
-fix navbar toggle on mobile
 add option to delete shorten link
-make input are look better on mobile
 
