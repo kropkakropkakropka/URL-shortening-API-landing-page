@@ -62,8 +62,8 @@ bootstrap docs
 ## Author
 
 - Website - 
-- Frontend Mentor - 
-- Twitter - 
+- Frontend Mentor - https://www.frontendmentor.io/profile/kropkakropkakropka
+- Twitter - https://twitter.com/Ny00ton
 
 
 ## Todo
