@@ -142,7 +142,9 @@ main{
   height: 60%;
   width: 0.5rem;
 }
-
+#nav-line{
+  display: none;
+}
 #invalid-url-message{
   display: none;
   color: red;
@@ -151,13 +153,18 @@ main{
   margin-left: 1.1rem;
   top: 70%; 
 }
-@media (max-width: 992px){
+@media (max-width: 991px){
   #navbarText{
     background-color: var(--bg-purple);
   }
   #navbarText a{
     font-size: 1.2rem;
     color: #fff;
+  }
+  #nav-line{
+    display: block;
+    height: 1px;
+    background-color: #fff;
   }
 }
 
