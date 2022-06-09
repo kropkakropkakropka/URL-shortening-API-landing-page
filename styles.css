@@ -83,7 +83,7 @@ select {
 .bg-purple{background-color: var(--bg-purple);}
 .card-width{width: var(--cr-width);}
 .shrt-color{color:var(--btn-color)}
-
+.invalid-url{border: 3px solid red;}
 h1 {
   font-size: 4.6rem;
 }
@@ -121,6 +121,7 @@ main{
 }
 
 #input-area {
+  position: relative;
   background-image: url(./images/bg-shorten-desktop.svg);
   background-position: left;
 }
@@ -142,6 +143,14 @@ main{
   width: 0.5rem;
 }
 
+#invalid-url-message{
+  display: none;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 1.1rem;
+  top: 70%; 
+}
 @media (max-width: 992px){
   #navbarText{
     background-color: var(--bg-purple);
@@ -178,5 +187,8 @@ main{
   #input-area button,
   #input-area input{
     width: 100%;
+  }
+  #invalid-url-message{
+    position: relative; 
   }
 }
